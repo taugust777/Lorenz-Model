@@ -88,7 +88,16 @@ The only difference between the two model runs is that the black line uses x = 1
 
 ![Lorenz Model Output](images/Lorenz_Model_Output_EXAMPLE.png)
 
-There is noticeable divergence between the two solutions presented in the figure above. The three-panel plot below offers further insight into the agreement between the two model solutions. From left-to-right, the figure shows the solutions from time 0-10, the solutions from time 0-20, and the solutions from time 0-30.
+There is noticeable divergence between the two solutions presented in the figure above. The three-panel plot below offers further insight into the agreement between the two model solutions. From left to right, the figure shows the solutions from time 0-10, the solutions from time 0-20, and the solutions from time 0-30.
+
+![Lorenz Model Output](images/Lorenz_Model_Output_3PANELPLOT.png)
+
+It is seen that at earlier timeframes, the two solutions are in good agreement with one another; however, as time progresses and we move further and further from the original time, the two solutions diverge from one another, as evidenced by the differing trajectories. This captures the inherent nature of nonlinearity and chaos theory by showing that a slight deviation as small as 1/1000 in the initial conditions leads to a cascading effect in terms of the final output solution. Taking it even one step further, it is possible to track the overall "distance" between the two solutions by simply adding the following line of code:
+
+    distance = np.sqrt((x1_array - x2_array)**2 + (y1_array - y2_array)**2 + (z1_array - z2_array)**2)
+
+where x1, y1, and z1 correspond to the solutions to the black line and x2, y2, and z2 correspond to the orange line. This line of code is commented out in the model code itself. The output from this code using the current model solutions gives:
+
 
 
 ## Packages
