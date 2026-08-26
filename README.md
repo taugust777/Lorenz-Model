@@ -34,7 +34,7 @@ time -> the time range (DEFAULT: np.arange(0, 30, dt))
 
 x -> convection rate (DEFAULT: 1)
 
-y-> temperature difference (DEFAULT: 1)
+y -> temperature difference (DEFAULT: 1)
 
 z -> nonlinear vertical temperature profile (DEFAULT: 1)
 
@@ -45,6 +45,48 @@ rho -> buoyancy effects (DEFAULT: 28)
 beta -> system dimensions (DEFAULT: 8/3)
 
 ## Output Example
+
+The example output below shows the extreme sensitivity to the chosen initial conditions. The plot below contains a black line and an orange line (done using the code found in "Lorenz_Model_CODE.py" using multiple runs and saving each). The parameters for each line are shown below:
+
+### Black Line
+
+dt = 0.01
+
+time = np.arange(0, 30, dt)
+
+x = 1
+
+y = 1
+
+z = 1
+
+sigma = 10
+
+rho = 28
+
+beta = 8/3
+
+### Orange Line
+
+dt = 0.01
+
+time = np.arange(0, 30, dt)
+
+x = 1.0001
+
+y = 1
+
+z = 1
+
+sigma = 10
+
+rho = 28
+
+beta = 8/3
+
+The only difference between the two model runs is that the black line uses x = 1 (i.e., convection rate), while the orange line uses x = 1.0001.
+
+
 
 
 
