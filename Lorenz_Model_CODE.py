@@ -1,7 +1,7 @@
 #Lorenz model
 
 #Tim August
-# 4 / 14/ 26
+# 4 / 14 / 26
 
 #Model for atmospheric convection
 
