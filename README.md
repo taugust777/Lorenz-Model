@@ -86,8 +86,9 @@ beta = 8/3
 
 The only difference between the two model runs is that the black line uses x = 1 (i.e., convection rate), while the orange line uses x = 1.0001.
 
+![Lorenz Model Output](images/Lorenz_Model_Output_EXAMPLE.png)
 
-
+There is noticeable divergence between the two solutions presented in the figure above. The three-panel plot below offers further insight into the agreement between the two model solutions. From left-to-right, the figure shows the solutions from time 0-10, the solutions from time 0-20, and the solutions from time 0-30.
 
 
 ## Packages
