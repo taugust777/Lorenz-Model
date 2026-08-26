@@ -98,7 +98,15 @@ It is seen that at earlier timeframes, the two solutions are in good agreement w
 
 where x1, y1, and z1 correspond to the solutions to the black line and x2, y2, and z2 correspond to the orange line. This line of code is commented out in the model code itself. The output from this code using the current model solutions gives:
 
+![Lorenz Model Output](images/Lorenz_Model_Output_DISTANCE.png)
 
+It is seen that a difference of 1/1000 in the initial condition can lead to a cascading effect where the overall solution differs by almost $10^1$ by the final time frame.
+
+## Future Ideas
+
+1. Explore the impact that the Prandtl number has on the system.
+2. Explore the effects of increasing (or decreasing) the time step (dt) and how this impacts the numerical stability of the system
+3. Since the forward Euler time step is first order, it is subject to numerical drift. Implement a higher-order method, such as RK4, and examine the numerical stability of the system.
 
 ## Packages
 
