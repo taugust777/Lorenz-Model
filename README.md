@@ -1,4 +1,4 @@
-# Lorenz-Model
+# Lorenz Model
 
 ## Overview
 
@@ -6,9 +6,58 @@ In 1963, Edward Lorenz, in his paper "Deterministic Nonperiodic Flow," explored 
 
 $$
 \frac{dx}{dt} = \sigma (y - x)
+$$
+
+$$
 \frac{dy}{dt} = x(\rho - z) - y
+$$
+
+$$
 \frac{dz}{dt} = xy - \beta z
 $$
 
+where x is the fluid flow rate (i.e., the convection rate), y is the temperature difference, z is the effect of the nonlinear vertical temperature profile, $\sigma$ is the Prandtl number (a diffusivity ratio), $\rho$ is the Rayleigh number (buoyancy), and $\beta$ refers to the system dimensions. This system was foundational to the development of chaos theory, or the idea that slight changes in initial conditions can cascade into large differences. The model output is known as a Lorenz Attractor and resembles that of a butterfly, which gives rise to the term "the butterfly effect".
 
+## Numerical Methods
+
+The model developed here runs on a forward Euler time-stepping scheme. Note that since this is a first-order method, the model can suffer from numerical drift given a large time step (dt) value.
+
+## Running the Model
+
+The model code is housed in the file "Lorenz_Model_CODE.py." All model parameters are detailed within that file and are given below as well. The output displays the classic Lorenz Attractor.
+
+## Model Input
+
+dt -> time step (DEFAULT: 0.01)
+
+time -> the time range (DEFAULT: np.arange(0, 30, dt))
+
+x -> convection rate (DEFAULT: 1)
+
+y-> temperature difference (DEFAULT: 1)
+
+z -> nonlinear vertical temperature profile (DEFAULT: 1)
+
+sigma -> diffusivity effect (DEFAULT: 10)
+
+rho -> buoyancy effects (DEFAULT: 28)
+
+beta -> system dimensions (DEFAULT: 8/3)
+
+## Output Example
+
+
+
+## Packages
+
+The packages needed to run this model are:
+1. numpy
+2. matplotlib
+3. mplot3d from mpl_toolkits
+
+## Use
+
+
+
+## Reference Links
 
