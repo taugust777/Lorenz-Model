@@ -73,6 +73,8 @@ x_array = np.array(x_values)
 y_array = np.array(y_values)
 z_array = np.array(z_values)
 
+#Distance track -> **See README.md**
+#distance = np.sqrt((x1_array - x2_array)**2 + (y1_array - y2_array)**2 + (z1_array - z2_array)**2)
 
 #Plotting
 fig = plt.figure()
