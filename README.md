@@ -106,7 +106,7 @@ It is seen that a difference of 1/1000 in the initial condition can lead to a ca
 
 1. Explore the impact that the Prandtl number has on the system.
 2. Explore the effects of increasing (or decreasing) the time step (dt) and how this impacts the numerical stability of the system
-3. Since the forward Euler time step is first order, it is subject to numerical drift. Implement a higher-order method, such as RK4, and examine the numerical stability of the system.
+3. Since the forward Euler time step is first order, it is subject to numerical drift. Implement a higher-order method, such as Runge-Kutta (fourth order -- RK4), and examine the numerical stability of the system.
 
 ## Packages
 
