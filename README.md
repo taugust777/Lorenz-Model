@@ -115,10 +115,6 @@ The packages needed to run this model are:
 2. matplotlib
 3. mplot3d from mpl_toolkits
 
-## Use
-
-The code here is free and available to download, use, and can be modified any way. I do ask for an appropriate acknowledgement should it be used in any kind of project, publication, teaching material, etc.
-
 ## Reference Links
 
 https://doi.org/10.1175/1520-0469(1963)020<0130:DNF>2.0.CO;2 -> Lorenz 1963 paper
