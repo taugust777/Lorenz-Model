@@ -100,7 +100,7 @@ where x1, y1, and z1 correspond to the solutions to the black line and x2, y2, a
 
 ![Lorenz Model Output](images/Lorenz_Model_Output_DISTANCE.png)
 
-It is seen that a difference of 1/1000 in the initial condition can lead to a cascading effect where the overall solution differs by almost $10^1$ by the final time frame.
+It is seen that a difference of 1/10000 in the initial condition can lead to a cascading effect where the overall solution differs by almost $10^1$ by the final time frame.
 
 ## Future Ideas
 
